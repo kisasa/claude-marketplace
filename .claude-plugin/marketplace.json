@@ -16,7 +16,9 @@
   "category": "productivity",
   "tags": [],
   "plugins": [],
-  "commands": [],
+  "commands": [
+    "./commands/meeting.md"
+  ],
   "agents": [],
   "hooks": {},
   "mcpServers": {}
