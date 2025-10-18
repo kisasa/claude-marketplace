@@ -19,7 +19,16 @@
   "commands": [
     "./commands/meeting.md"
   ],
-  "agents": [],
+  "agents": [
+    "./agents/quimby-product-vp.md",
+    "./agents/marge-ux-designer.md",
+    "./agents/lisa-product-manager.md",
+    "./agents/martin-business-analyst.md",
+    "./agents/frink-principal-engineer.md",
+    "./agents/ralph-qa-lead.md",
+    "./agents/moe-database-admin.md",
+    "./agents/apu-devops-engineer.md"
+  ],
   "hooks": {},
   "mcpServers": {}
 }
