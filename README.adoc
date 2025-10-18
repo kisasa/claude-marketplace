@@ -4,9 +4,14 @@ A marketplace of resources for use when pairing with Claude, including commands,
 
 == Commands
 
-`/meeting "[agent1,agent2]" "[topic]"`
+[cols="1,2,4",options="header"]
+|===
+|Name |Usage |Summary
 
-Start a meeting with a collection of agents to ideate about a topic or feature
+|*/meeting*
+|`/meeting "agent1,.." "topic"`
+|Start a meeting with a collection of agents to ideate about a topic or feature
+|===
 
 == Agents
 
@@ -55,15 +60,6 @@ This marketplace includes configuration for the following MCP servers:
 
 The GitHub MCP server provides Claude with direct access to GitHub's platform, enabling repository management, issue tracking, pull request operations, and code analysis.
 
-*Setup:*
-
-. Create a GitHub Personal Access Token:
-   * Go to https://github.com/settings/tokens[GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)]
-   * Click "Generate new token (classic)"
-   * Give it a descriptive name (e.g., "Claude MCP Server")
-   * Select the `repo` scope (full control of private repositories)
-   * Click "Generate token" and copy the token
-
 . Set the environment variable:
 +
 [source,bash]
@@ -74,11 +70,3 @@ export GITHUB_PERSONAL_ACCESS_TOKEN=your_token_here
 To make this persistent, add it to your shell profile (`~/.bashrc`, `~/.zshrc`, etc.)
 
 . The GitHub MCP server will be automatically configured when you install this marketplace
-
-*Capabilities:*
-
-* Browse and query code repositories
-* Create, update, and manage issues and pull requests
-* Monitor GitHub Actions workflow runs
-* Analyze security findings and Dependabot alerts
-* Manage releases and repository metadata
