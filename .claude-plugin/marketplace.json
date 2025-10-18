@@ -1,0 +1,23 @@
+{
+  "strict": true,
+  "name": "kisasa-marketplace",
+  "owner": {
+    "name": "Kisasa",
+    "email": "contact@kisasa.io"
+  },
+  "metadata": {
+    "description": "A marketplace of resources for use when pairing with Claude",
+    "version": "0.1.0"
+  },
+  "homepage": "https://kisasa.io/resources/claude-marketplace",
+  "repository": "https://github.com/kisasa/claude-marketplace",
+  "license": "MIT",
+  "keywords": ["workflow", "automation", "pairing", "development"],
+  "category": "productivity",
+  "tags": [],
+  "plugins": [],
+  "commands": [],
+  "agents": [],
+  "hooks": {},
+  "mcpServers": {}
+}
