@@ -4,6 +4,9 @@
     "name": "Kisasa",
     "email": "contact@kisasa.io"
   },
+  "metadata": {
+    "description": "The Kisasa Marketplace. A place of helpful resources for Claude."
+  },
   "plugins": [
     {
       "name": "kisasa",
