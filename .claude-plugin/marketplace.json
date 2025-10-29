@@ -14,16 +14,16 @@
       "description": "A collection of resources for use when pairing with Claude",
       "category": "productivity",
       "strict": false,
-      "version": "0.2.3",
+      "version": "1.0.1",
       "author": {
         "name": "Kisasa",
         "email": "contact@kisasa.io",
-        "url": "https://github.com/kisasa"
+        "url": "https://kisasa.io"
       },
       "homepage": "https://github.com/kisasa/claude-marketplace",
       "repository": "https://github.com/kisasa/claude-marketplace",
       "license": "MIT",
-      "keywords": ["workflow", "pairing", "kisasa"]
+      "keywords": ["workflow", "pairing", "kisasa", "resources"]
     }
   ]
 }
