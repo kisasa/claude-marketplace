@@ -1,56 +1,206 @@
-= claude-marketplace
+= Kisasa Claude Marketplace
 
-A marketplace of resources for use when pairing with Claude, including commands, agents, and MCP server configurations.
+A comprehensive marketplace of specialized AI agents, commands, and MCP server configurations for Claude Code. This marketplace brings a full product development team to your fingertips—complete with role-specific agents and commands that mimic how human teams collaborate, plan work, and build software.
 
-== Commands
+== Why Kisasa?
 
-[cols="1,2,4",options="header"]
-|===
-|Name |Usage |Summary
+Traditional development often requires juggling multiple perspectives: product strategy, user experience, technical architecture, marketing, and more. The Kisasa marketplace provides specialized agents that each bring deep expertise in their domain, allowing you to:
 
-|*/meeting*
-|`/meeting "agent1,.." "topic"`
-|Start a meeting with a collection of agents to ideate about a topic or feature
-|===
+* *Get strategic product guidance* from a VP of Product
+* *Refine user stories and manage backlogs* with a Product Manager
+* *Design user-centered experiences* with a UX Designer
+* *Architect complex systems* with a Principal Engineer
+* *Analyze business requirements* with a Business Analyst
+* *Facilitate domain modeling sessions* with an Event Stormer
+* *Develop marketing strategies* with Marketing Leaders
+* *And more...*
+
+Beyond individual agents, Kisasa includes collaborative commands that orchestrate multiple agents together—simulating real team meetings and automatically generating organized work backlogs in Linear.
+
+== Quick Start
+
+Install the marketplace in your Claude Code environment to gain access to all agents and commands.
 
 == Agents
 
-[cols="1,2,4",options="header"]
-|===
-|Name |Agent Purpose |Summary
+Each agent brings specialized expertise and a unique perspective to your development process. Agents can be invoked individually for targeted help or brought together in collaborative meetings.
 
-|*Quimby*
-|VP of Product - Strategic Guidance
-|Provides strategic product direction, competitive analysis, and business alignment validation. Evaluates feature requests against business objectives, conducts market positioning assessments, and ensures product decisions align with broader business goals.
+=== Product & Business
 
-|*Marge*
-|UX Designer - User Experience
-|Delivers user experience design guidance, user research insights, and usability feedback. Expert in user journey mapping, accessibility improvements, interaction design, and creating empathetic user-centered perspectives on product features.
+==== *Quimby* - VP of Product (Strategic Guidance)
 
-|*Lisa*
-|Product Manager - Tactical Execution
-|Breaks down features into user stories with acceptance criteria, analyzes data to inform decisions, and coordinates between design, engineering, and business stakeholders. Defines success metrics and creates detailed product specifications.
+_Focus: Strategic product decisions, competitive positioning, business alignment_
 
-|*Frink*
-|Principal Engineer - Technical Architecture
-|Provides expert-level architectural decisions and complex system design. Excels at designing scalable systems, evaluating technical approaches, identifying edge cases, proposing innovative solutions, and refactoring complex codebases.
+Quimby provides executive-level product leadership. He evaluates feature requests against business objectives, conducts competitive analysis, and ensures product decisions align with market positioning and company goals.
 
-|*Apu*
-|DevOps Engineer - Infrastructure & Reliability
-|Handles infrastructure provisioning, CI/CD pipelines, deployment automation, and monitoring setup. Manages containerization, cloud infrastructure, system reliability improvements, and troubleshoots production issues.
+*Example prompts:*
 
-|*Martin*
-|Business Analyst - Requirements & Analysis
-|Conducts thorough business analysis, requirements gathering, process documentation, and stakeholder analysis. Expert in creating detailed specifications, impact assessments, and translating business needs into technical requirements.
+* "We've had several customer requests for real-time collaboration. Should we prioritize this?"
+* "What should we focus on next quarter from a product strategy perspective?"
+* "I've finished implementing the analytics dashboard. Can you review it strategically?"
 
-|*Moe*
-|Database Administrator - Data Management
-|Provides expert database administration including schema design, query optimization, and performance tuning. Manages backup strategies, index management, database migrations, and security configurations.
+==== *Lisa* - Product Manager (Tactical Execution)
 
-|*Ralph*
-|QA Lead - Quality Assurance
-|Conducts comprehensive quality assurance reviews, test planning, and validation. Systematically examines code through functional testing, security review, edge cases, error handling, and performance analysis to ensure production-ready quality.
-|===
+_Focus: User stories, acceptance criteria, backlog management, Linear workspace_
+
+Lisa translates strategy into actionable work. She breaks down features into well-defined user stories, manages the Linear backlog, analyzes data to inform decisions, and coordinates between design, engineering, and business stakeholders.
+
+*Example prompts:*
+
+* "We want to add a notification system. Help me break this down into user stories."
+* "Should we build the search feature with client-side filtering or server-side API calls?"
+* "I need to organize our Linear backlog and prioritize bugs versus features."
+* "We launched the dashboard last month. How do we know if it's successful?"
+
+==== *Martin* - Business Analyst (Requirements & Analysis)
+
+_Focus: Requirements gathering, process documentation, impact analysis_
+
+Martin brings analytical rigor and structured methodologies to business analysis. He's your expert for documenting requirements, mapping business processes, conducting stakeholder analysis, and performing comprehensive risk assessments.
+
+*Example prompts:*
+
+* "I need to document requirements for our new payment processing feature."
+* "Can you analyze the business impact of moving to microservices?"
+* "We need to map out our current order fulfillment process."
+* "What are the risks and dependencies for this new feature?"
+
+=== Design & User Experience
+
+==== *Marge* - UX Designer (User Experience)
+
+_Focus: User research, interface design, usability, accessibility_
+
+Marge brings deep empathy and user-centered design expertise. She provides usability feedback, designs user journeys, recommends interaction patterns, and ensures accessibility. She's your advocate for creating delightful, frustration-free experiences.
+
+*Example prompts:*
+
+* "I've finished implementing a checkout flow. Can you review it from a UX perspective?"
+* "We're adding bulk-edit functionality. What's the best interaction pattern?"
+* "Users can't find the export button. Help me improve findability."
+
+=== Engineering & Architecture
+
+==== *Frink* - Principal Engineer (Technical Architecture)
+
+_Focus: System design, architectural decisions, complex problem solving_
+
+Professor Frink provides expert-level technical leadership. He designs scalable systems, evaluates multiple approaches, identifies edge cases, proposes innovative solutions, and conducts thorough architectural reviews.
+
+*Example prompts:*
+
+* "I need to design a distributed caching system handling 100k requests per second."
+* "This legacy authentication system is unmaintainable. What are our options?"
+* "We're seeing race conditions in our order processing pipeline. Help me diagnose this."
+* "Can you review this database schema before we commit to it?"
+
+==== *Homer* - Event Storming Facilitator
+
+_Focus: Domain modeling, event storming, ubiquitous language_
+
+Despite his reputation for donuts, Homer is an exceptional event storming facilitator. He helps teams discover domain events, establish bounded contexts, create ubiquitous language, and generate prioritized backlogs through structured domain exploration.
+
+*Example prompts:*
+
+* "We're building an e-commerce checkout system. Let's map out the domain."
+* "Our team is confused about who owns customer data. Help us clarify boundaries."
+* "We're launching a subscription service and need to understand the business flows."
+* "Different teams use different terms for payments. Let's establish common language."
+
+=== Marketing & Growth
+
+==== *Lindsey* - Marketing Leader (Full-Stack Marketing)
+
+_Focus: Marketing strategy, positioning, campaigns, content creation_
+
+Lindsey is a versatile marketing leader who bridges strategy and execution. She develops go-to-market plans, creates campaigns, writes compelling copy, conducts competitive research, and analyzes performance—handling everything a small business needs.
+
+*Example prompts:*
+
+* "We're launching a new SaaS product in 8 weeks. Help me build a go-to-market strategy."
+* "Our ads get clicks but don't convert. What's breaking in our funnel?"
+* "Who are our main competitors and how should we position ourselves?"
+* "We need a landing page, email campaign, and social posts for our new feature."
+
+==== *Connie* - Ecommerce Marketing Strategist
+
+_Focus: Shopify, social media advertising, retail growth, brand building_
+
+Connie specializes in ecommerce marketing, particularly on Shopify. She brings expertise in social media advertising, multi-channel marketing, conversion optimization, and customer acquisition strategies for retail businesses.
+
+*Example prompts:*
+
+* "I'm launching a Shopify store for sustainable home goods. What should my first 90 days look like?"
+* "Our Instagram ads get clicks but don't convert. Help me find the bottleneck."
+* "What's the best balance between Facebook ads and influencer marketing for fashion?"
+
+== Commands
+
+Commands orchestrate multiple agents to simulate how human teams collaborate, plan work, and organize backlogs.
+
+=== `/kisasa:meeting` - Collaborative Agent Meetings
+
+*Usage:* `/kisasa:meeting [agent1,agent2,...] [topic] [meeting-notes-path]`
+
+Facilitate strategic team meetings where multiple agents ideate, discuss trade-offs, and make decisions together. The command uses extended thinking mode to run through structured phases: agenda setting, round-robin discussion, decision making, action planning, and wrap-up.
+
+*What it does:*
+
+* Brings together specified agents to discuss a topic
+* Facilitates structured discussions with multiple expert perspectives
+* Tracks decisions, questions, risks, and action items
+* Generates comprehensive meeting notes in markdown format
+* Supports follow-up meetings with context from previous sessions
+
+*Example prompts:*
+
+* `/kisasa:meeting quimby,lisa,frink "new real-time collaboration feature" meeting-notes/collab-feature`
+* `/kisasa:meeting marge,frink "checkout flow redesign" meeting-notes/checkout`
+* `/kisasa:meeting martin,lisa "Q4 roadmap planning" meeting-notes/q4-planning`
+
+*Output:*
+
+* Displays meeting summary with key decisions and action items
+* Saves detailed meeting notes to markdown file with full discussion, decision log, Q&A, risk register, and next steps
+
+=== `/kisasa:linear-backlog` - Automated Linear Backlog Creation
+
+*Usage:* `/kisasa:linear-backlog [agent1,agent2,...] [notes-path]`
+
+Transform meeting notes into a fully-organized Linear backlog complete with issues, labels, workflows, and automated agent delegation via webhooks. This command handles the complete lifecycle: team setup, workflow configuration, issue creation, webhook bridge generation, and GitHub Actions integration.
+
+*What it does:*
+
+* Reads meeting notes to understand project scope
+* Creates or locates your Linear team
+* Configures workflow statuses (Backlog → Todo → In Progress → Review → Done)
+* Creates label groups for Agents and Types
+* Collaborates with specified agents to define issues with acceptance criteria
+* Generates webhook bridge function (Vercel, AWS Lambda, Netlify, or Google Cloud)
+* Creates GitHub Actions workflow for automatic agent delegation
+* Documents the complete setup with deployment instructions
+
+*Example prompts:*
+
+* `/kisasa:linear-backlog lisa,frink,marge meeting-notes/collab-feature`
+* `/kisasa:linear-backlog martin,quimby,lisa meeting-notes/checkout`
+
+*Output:*
+
+* Creates issues in Linear with full specifications
+* Generates webhook bridge code for your chosen cloud provider
+* Creates GitHub Actions workflow file
+* Produces comprehensive setup documentation
+* Provides deployment instructions
+
+*The Magic:* When you move a Linear issue to "In Progress", the webhook bridge automatically:
+
+. Detects the agent label on the issue
+. Determines the branching strategy (parent/child relationships)
+. Triggers GitHub Actions workflow
+. Spins up Claude Code with the assigned agent
+. Agent works on the issue following their expertise
+. Creates a pull request linked back to Linear
 
 == MCP Servers
 
@@ -59,6 +209,8 @@ This marketplace includes configuration for the following MCP servers:
 === GitHub MCP Server
 
 The GitHub MCP server provides Claude with direct access to GitHub's platform, enabling repository management, issue tracking, pull request operations, and code analysis.
+
+*Setup:*
 
 . Set the environment variable:
 +
@@ -70,3 +222,61 @@ export GITHUB_PERSONAL_ACCESS_TOKEN=your_token_here
 To make this persistent, add it to your shell profile (`~/.bashrc`, `~/.zshrc`, etc.)
 
 . The GitHub MCP server will be automatically configured when you install this marketplace
+
+=== Linear MCP Server
+
+The Linear MCP server provides direct integration with Linear's workspace, enabling issue management, project tracking, and backlog organization. This is used by the Lisa agent and the `/kisasa:linear-backlog` command.
+
+*Note:* Linear MCP configuration is handled automatically by the commands that need it.
+
+== Installation
+
+Install this marketplace through Claude Code's marketplace interface. All agents, commands, and MCP configurations will be available immediately after installation.
+
+== How It Works
+
+=== Individual Agent Invocation
+
+When you ask Claude Code for help that matches an agent's expertise, the agent is automatically engaged with their specialized knowledge and approach. Each agent operates with their own:
+
+* Domain expertise and methodologies
+* Communication style and perspective
+* Quality standards and frameworks
+* Tool access appropriate to their role
+
+=== Collaborative Commands
+
+The meeting and backlog commands orchestrate multiple agents together, simulating real team collaboration:
+
+. *Meeting Command*: Facilitates structured discussions where agents debate trade-offs, ask questions, surface risks, and reach decisions together
+. *Backlog Command*: Coordinates agents to break down work, then automates the entire Linear + GitHub integration setup
+
+=== Automated Workflow
+
+The `/kisasa:linear-backlog` command creates a complete automated workflow:
+
+----
+Linear Issue (Todo)
+  → User moves to "In Progress"
+    → Linear webhook fires
+      → Webhook bridge validates and processes
+        → GitHub Actions triggered
+          → Claude Code spins up with agent
+            → Agent implements feature
+              → Pull Request created
+                → Linked back to Linear issue
+----
+
+This mimics how human teams work: discuss → plan → assign → implement → review.
+
+== Contributing
+
+Contributions are welcome! If you'd like to add new agents, enhance existing ones, or improve commands, please submit a pull request.
+
+== License
+
+See LICENSE.md for details.
+
+'''
+
+*Built for developers who want AI collaboration that feels like working with a world-class team.*
