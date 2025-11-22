@@ -21,7 +21,7 @@ Beyond individual agents, Kisasa includes collaborative commands that orchestrat
 
 Install the marketplace in your Claude Code environment to gain access to all agents and commands.
 
-[source,bash]
+[source,shell]
 ----
 # Start claude
 claude
