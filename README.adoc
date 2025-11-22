@@ -21,6 +21,26 @@ Beyond individual agents, Kisasa includes collaborative commands that orchestrat
 
 Install the marketplace in your Claude Code environment to gain access to all agents and commands.
 
+[source,bash]
+----
+# Start claude
+claude
+
+# Add Kisasa marketplace
+/plugin marketplace add kisasa/claude-marketplace
+
+# Install Kisasa plugin (agents and commands included)
+/plugin install kisasa@kisasa/claude-marketplace
+
+# Restart Claude
+/exit
+claude
+----
+
+== Installation
+
+Install this marketplace through Claude Code's marketplace interface. All agents, commands, and MCP configurations will be available.
+
 == Agents
 
 Each agent brings specialized expertise and a unique perspective to your development process. Agents can be invoked individually for targeted help or brought together in collaborative meetings.
@@ -206,32 +226,11 @@ Transform meeting notes into a fully-organized Linear backlog complete with issu
 
 This marketplace includes configuration for the following MCP servers:
 
-=== GitHub MCP Server
-
-The GitHub MCP server provides Claude with direct access to GitHub's platform, enabling repository management, issue tracking, pull request operations, and code analysis.
-
-*Setup:*
-
-. Set the environment variable:
-+
-[source,bash]
-----
-export GITHUB_PERSONAL_ACCESS_TOKEN=your_token_here
-----
-+
-To make this persistent, add it to your shell profile (`~/.bashrc`, `~/.zshrc`, etc.)
-
-. The GitHub MCP server will be automatically configured when you install this marketplace
-
 === Linear MCP Server
 
 The Linear MCP server provides direct integration with Linear's workspace, enabling issue management, project tracking, and backlog organization. This is used by the Lisa agent and the `/kisasa:linear-backlog` command.
 
 *Note:* Linear MCP configuration is handled automatically by the commands that need it.
-
-== Installation
-
-Install this marketplace through Claude Code's marketplace interface. All agents, commands, and MCP configurations will be available immediately after installation.
 
 == How It Works
 
